@@ -150,17 +150,18 @@ export default {
       window.addEventListener("message", this.handleMessage);
     }
   },
-  destroyed() {
+  unmounted() {
     if (typeof window !== "undefined") {
       window.removeEventListener("message", this.handleMessage);
     }
   },
-  render(createElement) {
+  render() {
+    // createElement
     if (!this.show) {
       return;
     }
 
-    const iframe = createElement("iframe", {
+    const iframe = document.createElement("iframe", {
       key: this.idx,
       style: {
         height: `${this.height}px`,
@@ -181,7 +182,7 @@ export default {
     });
 
     if (this.showInModal) {
-      return createElement(
+      return document.createElement(
         "div",
         {
           style: {
@@ -197,7 +198,7 @@ export default {
           },
         },
         [
-          createElement(
+          document.createElement(
             "div",
             {
               style: {
