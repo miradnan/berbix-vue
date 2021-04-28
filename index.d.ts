@@ -12,6 +12,7 @@ declare namespace _default {
             export { _default as default };
         }
     }
+    const emits: string[];
     function data(): {
         height: number;
         show: boolean;

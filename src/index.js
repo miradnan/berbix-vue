@@ -31,6 +31,13 @@ export default {
       default: "v0",
     },
   },
+  emits: [
+    "complete",
+    "error",
+    "display",
+    "state-change",
+    "close-modal"
+  ],
   data() {
     return {
       height: 0,

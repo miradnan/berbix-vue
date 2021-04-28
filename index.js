@@ -33,6 +33,7 @@ var _default = {
       "default": "v0"
     }
   },
+  emits: ["complete", "error", "display", "state-change", "close-modal"],
   data: function data() {
     return {
       height: 0,
