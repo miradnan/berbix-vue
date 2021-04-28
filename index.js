@@ -37,7 +37,8 @@ var _default = {
     return {
       height: 0,
       show: true,
-      idx: 0
+      idx: 0,
+      marginTop: 0
     };
   },
   methods: {

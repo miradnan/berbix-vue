@@ -36,6 +36,7 @@ export default {
       height: 0,
       show: true,
       idx: 0,
+      marginTop: 0,
     };
   },
   methods: {

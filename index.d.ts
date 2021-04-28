@@ -16,11 +16,13 @@ declare namespace _default {
         height: number;
         show: boolean;
         idx: number;
+        marginTop: number;
     };
     function data(): {
         height: number;
         show: boolean;
         idx: number;
+        marginTop: number;
     };
     namespace methods {
         function makeBaseUrl(): any;
