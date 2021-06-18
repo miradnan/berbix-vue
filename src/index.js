@@ -1,3 +1,5 @@
+import { h } from 'vue'
+
 const SDK_VERSION = "1.0.0";
 
 const PayloadType = {
@@ -169,7 +171,7 @@ export default {
       return;
     }
 
-    const iframe = document.createElement("iframe", {
+    const iframe = h("iframe", {
       key: this.idx,
       style: {
         height: `${this.height}px`,
@@ -190,7 +192,7 @@ export default {
     });
 
     if (this.showInModal) {
-      return document.createElement(
+      return h(
         "div",
         {
           style: {
@@ -206,7 +208,7 @@ export default {
           },
         },
         [
-          document.createElement(
+          h(
             "div",
             {
               style: {
