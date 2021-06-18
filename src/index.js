@@ -183,12 +183,10 @@ export default {
         width: "100%",
         overflow: "hidden",
       },
-      attrs: {
-        src: this.frameUrl(),
-        allow: "camera",
-        scrolling: "no",
-        referrerpolicy: "no-referrer-when-downgrade",
-      },
+      src: this.frameUrl(),
+      allow: "camera",
+      scrolling: "no",
+      referrerpolicy: "no-referrer-when-downgrade",
     });
 
     if (this.showInModal) {
